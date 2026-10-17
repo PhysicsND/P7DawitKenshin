@@ -13,4 +13,8 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    private void OnMouseDown()
+    {
+        Debug.Log("Mouse Clicked");
+    }
 }
