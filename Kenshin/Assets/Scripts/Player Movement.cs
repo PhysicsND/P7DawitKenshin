@@ -14,10 +14,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]private LayerMask groundMask;
 
     private CharacterController controller;
-   [SerializeField] private Transform cameraTransform;
+    [SerializeField] private Transform cameraTransform;
     private Vector3 velocity;
     private bool isGrounded;
-
+    private bool jumpRequested;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,12 +32,17 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+      {
         GroundCheck();
         Movement();
-        JumpAndGravity();
+       
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpRequested = true;
+        }
 
-    }
+        JumpAndGravity();
+      }
 
     private void GroundCheck()
     {
@@ -70,9 +75,10 @@ public class PlayerMovement : MonoBehaviour
             //aligns to face camera direction
             Vector3 camForward = cameraTransform.forward;
             Vector3 camRight = cameraTransform.right;
-            //prevents player from running upwards or downwards
+            //aligns to face camera direction//prevents player from running upwards or downwards
             camForward.y = 0f;
             camRight.y = 0f;
+            //prevents player from running upwards or downwards
             camForward.Normalize();
             camRight.Normalize();
            // Calculate the finalized direction vector
@@ -88,11 +94,17 @@ public class PlayerMovement : MonoBehaviour
     }
     private void JumpAndGravity()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
+         if (jumpRequested && isGrounded)
         {
         //Calculates velocity required to reach jump height
         velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+
+        if (jumpRequested)
+        {
+            jumpRequested = false;
+        }
+        
           // Apply downward velocity over time (Gravity acceleration formula: change in v = a * t)
         velocity.y += gravity * Time.deltaTime;
          controller.Move(velocity * Time.deltaTime);
