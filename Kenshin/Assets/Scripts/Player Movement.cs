@@ -1,9 +1,9 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour // Not just a movement script.
 {
-  
+     public float Health, MaxHealth;
     private float moveSpeed = 7f;
     private float rotationSpeed = 12f;
     private float jumpHeight = 2f;
