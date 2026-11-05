@@ -3,8 +3,10 @@ using UnityEngine.EventSystems;
 
 public class UI : MonoBehaviour, IPointerClickHandler
 {
+    [SerializeField] private RectTransform healthBar;
     [SerializeField] private GameObject uiObject;
     [SerializeField] private GameObject HealthBar;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,4 +29,5 @@ public class UI : MonoBehaviour, IPointerClickHandler
             HealthBar.SetActive(true);
         }
     }
+
 }
