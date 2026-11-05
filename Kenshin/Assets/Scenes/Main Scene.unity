@@ -1853,13 +1853,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3437353, y: -0.00060291233, z: -0.00068879453, w: 0.9390662}
+  m_LocalRotation: {x: 0.25881892, y: 0.00028909236, z: -0.001078907, w: 0.9659253}
   m_LocalPosition: {x: 16.001, y: 7.8416, z: -57.836}
   m_LocalScale: {x: 1.8132, y: 1.8132, z: 1.8132}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 40.209, y: -0.12, z: -0.128}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: -0.128}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1917,7 +1917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1409702642}
-  cameraOffset: {x: 0, y: 5, z: -4}
+  cameraOffset: {x: 0, y: 4, z: -6}
   smoothSpeed: 5
   followX: 1
   followY: 1
@@ -4386,6 +4386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600a7ffc571738f41a064cd47f81adb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  Maxhealth: 0
+  Width: 0
+  Height: 0
   healthBar: {fileID: 0}
   uiObject: {fileID: 855389476}
   HealthBar: {fileID: 1050933882}
@@ -6438,6 +6442,7 @@ GameObject:
   - component: {fileID: 1050933883}
   - component: {fileID: 1050933885}
   - component: {fileID: 1050933884}
+  - component: {fileID: 1050933886}
   m_Layer: 5
   m_Name: Health Bar
   m_TagString: Untagged
@@ -6503,6 +6508,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050933882}
   m_CullTransparentMesh: 1
+--- !u!114 &1050933886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050933882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b525b16f2bf521343a12553c11e816f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 20
+  MaxHealth: 20
+  Width: 203
+  Height: 43
+  healthBar: {fileID: 423045083}
 --- !u!1 &1051069542
 GameObject:
   m_ObjectHideFlags: 0
@@ -8054,8 +8076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd9041354a4c8249984b2688143a0b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
-  MaxHealth: 0
+  Health: 20
+  MaxHealth: 20
+  healthBar: {fileID: 1050933886}
   groundCheck: {fileID: 1787940201}
   groundDistance: 0.4
   groundMask:
@@ -10445,10 +10468,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1060, y: 60}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

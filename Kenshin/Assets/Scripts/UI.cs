@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class UI : MonoBehaviour, IPointerClickHandler
 {
+    public float Health, Maxhealth, Width, Height;
     [SerializeField] private RectTransform healthBar;
     [SerializeField] private GameObject uiObject;
     [SerializeField] private GameObject HealthBar;

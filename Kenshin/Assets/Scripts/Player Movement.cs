@@ -4,6 +4,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour // Not just a movement script.
 {
      public float Health, MaxHealth;
+     [SerializeField]private HealthScript healthBar;
+
+
+
     private float moveSpeed = 7f;
     private float rotationSpeed = 12f;
     private float jumpHeight = 2f;
@@ -22,6 +26,7 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+      healthBar.SetMaxHealth(MaxHealth);
         controller = GetComponent<CharacterController>();
 
         if (Camera.main != null)
@@ -33,7 +38,9 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
     // Update is called once per frame
     void Update()
       {
+
         GroundCheck();
+
         Movement();
        
         if (Input.GetButtonDown("Jump"))
@@ -108,6 +115,13 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
           // Apply downward velocity over time (Gravity acceleration formula: change in v = a * t)
         velocity.y += gravity * Time.deltaTime;
          controller.Move(velocity * Time.deltaTime);
+    }
+    public void setHealth(float healthChange) 
+    {
+     Health += healthChange;
+     Health = Mathf.Clamp(Health, 0, MaxHealth);
+
+     healthBar.SetHealth(Health);
     }
 }
  
