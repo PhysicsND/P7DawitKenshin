@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c727009a9bf2c454ab9b60fcbd230a1e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 382598
+  packageName: Cursed Cozy Village Free Pack
+  packageVersion: 1.3.0
+  assetPath: Assets/SerwusStudio/Cursed Cozy Village/Free Starter Pack/Shaders/CCA_WallLite.shader
+  uploadId: 1023792

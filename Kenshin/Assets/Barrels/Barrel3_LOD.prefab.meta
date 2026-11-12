@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1bfa92ca112491842ad5e3fb6b5ab535
+labels:
+- Barrel
+timeCreated: 1478165709
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32975
+  packageName: Barrels
+  packageVersion: 2.0
+  assetPath: Assets/Barrels/Barrel3_LOD.prefab
+  uploadId: 144927

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3c56f7659af49af48a10a0c905e4709f
+timeCreated: 1478164886
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32975
+  packageName: Barrels
+  packageVersion: 2.0
+  assetPath: Assets/Barrels/Source/Imports/Materials/Barrel3.mat
+  uploadId: 144927

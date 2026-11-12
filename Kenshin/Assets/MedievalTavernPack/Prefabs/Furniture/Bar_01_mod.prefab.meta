@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5aa3b4b1555c0644ea1f4723f81b9da9
+timeCreated: 1518272048
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112546
+  packageName: Medieval Tavern Pack
+  packageVersion: 1.0
+  assetPath: Assets/MedievalTavernPack/Prefabs/Furniture/Bar_01_mod.prefab
+  uploadId: 239853

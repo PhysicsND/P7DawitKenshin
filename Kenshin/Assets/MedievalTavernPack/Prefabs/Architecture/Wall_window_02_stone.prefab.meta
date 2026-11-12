@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 03e148745d491294a9aa82f70989ba51
+timeCreated: 1518373820
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112546
+  packageName: Medieval Tavern Pack
+  packageVersion: 1.0
+  assetPath: Assets/MedievalTavernPack/Prefabs/Architecture/Wall_window_02_stone.prefab
+  uploadId: 239853

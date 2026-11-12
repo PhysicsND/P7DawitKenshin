@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ad47015b51fd6bc49bc2df2da3223ba6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 382598
+  packageName: Cursed Cozy Village Free Pack
+  packageVersion: 1.3.0
+  assetPath: Assets/SerwusStudio/Cursed Cozy Village/Free Starter Pack/Shaders/CCA_PropLite.shader
+  uploadId: 1023792

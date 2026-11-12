@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+>
+    <engine:VisualElement name="root">
+
+        <!-- ============ welcome, shown once after import ============ -->
+        <engine:VisualElement name="welcome">
+
+            <engine:VisualElement name="titlebox">
+                <engine:VisualElement class="mark" />
+                <engine:VisualElement>
+                    <engine:Label class="eyebrow" text="/// SERWUS STUDIO" />
+                    <engine:Label name="lbl_pack" class="packname" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+
+            <engine:VisualElement class="roundedbox">
+                <engine:Label text="23 prefabs and two hand-written URP shaders. The interactive demo spins every model on a turntable and puts the shader on live sliders — the fastest way to see what is in here." />
+
+                <engine:Button name="btn_demo" class="primary" text="Open the Interactive Demo" />
+
+                <engine:Label class="tip" text="Try the wall: Damage Amount crumbles the plaster off to expose the brick, and none of it comes from a damage texture." />
+
+                <engine:Label class="section" text="/// MORE FROM CURSED COZY VILLAGE" />
+                <engine:VisualElement name="pack_links" />
+
+                <engine:VisualElement class="spacer" />
+
+                <engine:VisualElement class="row">
+                    <engine:Label name="btn_discord" class="hyperlink" text="→ Discord" />
+                    <engine:Label name="btn_rate" class="hyperlink" text="★ Rate this pack" />
+                    <engine:VisualElement class="grow" />
+                    <engine:Toggle name="tgl_startup" text="Show on startup" value="true" />
+                    <engine:Button name="btn_close" text="Close" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+        <!-- ============ review ask, once, days after import ============ -->
+        <engine:VisualElement name="rate">
+            <engine:VisualElement class="roundedbox">
+                <engine:VisualElement class="row">
+                    <engine:VisualElement class="mark" />
+                    <engine:VisualElement>
+                        <engine:Label class="eyebrow" text="/// SERWUS STUDIO" />
+                        <engine:Label class="h1" text="Enjoying the pack?" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:Label text="A rating is the main thing that puts a small pack in front of other developers. Honest ones — including the critical parts — help the most." />
+                <engine:Button name="btn_rate_go" class="primary" text="★ Rate this pack" />
+                <engine:VisualElement class="row">
+                    <engine:VisualElement class="grow" />
+                    <engine:Button name="btn_rate_later" text="Maybe later" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+    </engine:VisualElement>
+</engine:UXML>

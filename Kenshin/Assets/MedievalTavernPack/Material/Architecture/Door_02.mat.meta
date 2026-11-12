@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8941c7717e2641f47bbf41ff18fe12ca
+timeCreated: 1517252682
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112546
+  packageName: Medieval Tavern Pack
+  packageVersion: 1.0
+  assetPath: Assets/MedievalTavernPack/Material/Architecture/Door_02.mat
+  uploadId: 239853

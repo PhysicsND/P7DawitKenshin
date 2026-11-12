@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e4f4ee5a46340ec43ba2d82e2a95ba25
+timeCreated: 1517252081
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112546
+  packageName: Medieval Tavern Pack
+  packageVersion: 1.0
+  assetPath: Assets/MedievalTavernPack/Material/Furniture/Bar_02_mod.mat
+  uploadId: 239853

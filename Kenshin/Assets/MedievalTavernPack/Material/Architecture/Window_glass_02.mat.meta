@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8207d2765e4c859429fc00fae9cb97ba
+timeCreated: 1517338374
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112546
+  packageName: Medieval Tavern Pack
+  packageVersion: 1.0
+  assetPath: Assets/MedievalTavernPack/Material/Architecture/Window_glass_02.mat
+  uploadId: 239853

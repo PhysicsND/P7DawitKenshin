@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bcc4ea7fd028933469bdba8a1b464b29
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 382598
+  packageName: Cursed Cozy Village Free Pack
+  packageVersion: 1.3.0
+  assetPath: Assets/SerwusStudio/Cursed Cozy Village/Free Starter Pack/Demo/Scripts/Editor/CCVFreeDemoBuilder.cs
+  uploadId: 1023792

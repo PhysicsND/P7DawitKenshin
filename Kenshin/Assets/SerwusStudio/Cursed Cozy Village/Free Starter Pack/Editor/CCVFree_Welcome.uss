@@ -1,0 +1,150 @@
+/* Ground is Unity's own dark-skin grey (#383838, baked into the background PNG
+   together with the Cursed Cozy Village wordmark). Greens are sampled straight
+   out of the brand art: --green from the skull logo, --leaf from the wordmark.
+   Panels are kept light so the wordmark still reads through them. */
+:root {
+    --green: rgb(0, 138, 89);
+    --green-hi: rgb(0, 173, 111);
+    --leaf: rgb(191, 237, 163);
+    --leaf-hi: rgb(219, 248, 200);
+    --leaf-soft: rgba(191, 237, 163, 0.14);
+    --line: rgba(0, 173, 111, 0.65);
+
+    --panel: rgba(0, 0, 0, 0.32);
+    --text: rgb(210, 210, 210);
+    --muted: rgba(210, 210, 210, 0.45);
+}
+
+#root {
+    flex-grow: 1;
+    padding: 14px;
+    color: var(--text);
+    background-image: url("CCVFree_Welcome_BG.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+Label, TextElement {
+    font-size: 13px;
+    white-space: normal;
+}
+
+/* --- header ---------------------------------------------------------- */
+
+#titlebox {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: var(--panel);
+    border-width: 1px;
+    border-bottom-width: 0;
+    border-radius: 12px 12px 0 0;
+    border-color: var(--line);
+}
+
+.mark {
+    width: 46px;
+    height: 46px;
+    margin-right: 12px;
+    background-image: url("CCVFree_Brand_Mark.png");
+    background-size: contain;
+}
+
+/* Uppercase is written into the text: USS has no text-transform. */
+.eyebrow {
+    font-size: 11px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    color: var(--leaf);
+    margin-bottom: 1px;
+}
+
+.packname {
+    font-size: 17px;
+    -unity-font-style: bold;
+    color: rgb(238, 238, 238);
+}
+
+/* --- body ------------------------------------------------------------ */
+
+.roundedbox {
+    flex-grow: 1;
+    padding: 12px;
+    background-color: var(--panel);
+    border-width: 1px;
+    border-radius: 0 0 12px 12px;
+    border-color: var(--line);
+}
+
+#rate .roundedbox {
+    border-radius: 12px;
+}
+
+.h1 {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(238, 238, 238);
+    margin-bottom: 4px;
+}
+
+.section {
+    font-size: 11px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.tip { color: var(--muted); margin-top: 3px; }
+.spacer { flex-grow: 1; }
+.grow { flex-grow: 1; }
+.row { flex-direction: row; align-items: center; }
+
+/* --- links ----------------------------------------------------------- */
+
+.hyperlink {
+    color: var(--leaf);
+    padding: 2px 5px;
+    border-radius: 4px;
+    cursor: link;
+}
+.hyperlink:hover {
+    color: var(--leaf-hi);
+    background-color: var(--leaf-soft);
+}
+.hyperlink:active { background-color: rgba(191, 237, 163, 0.26); }
+
+.soon {
+    color: rgba(210, 210, 210, 0.3);
+    padding: 2px 5px;
+}
+
+/* --- buttons --------------------------------------------------------- */
+
+Button {
+    padding: 5px 12px;
+    color: var(--text);
+    background-color: rgba(0, 0, 0, 0.28);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    cursor: link;
+}
+Button:hover {
+    background-color: var(--leaf-soft);
+    border-color: var(--line);
+}
+Button:active { background-color: rgba(0, 0, 0, 0.45); }
+
+.primary {
+    height: 36px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    margin: 10px 0 4px 0;
+    color: rgb(240, 255, 246);
+    background-color: var(--green);
+    border-color: var(--green-hi);
+}
+.primary:hover { background-color: var(--green-hi); }
+.primary:active { background-color: rgb(0, 110, 71); }

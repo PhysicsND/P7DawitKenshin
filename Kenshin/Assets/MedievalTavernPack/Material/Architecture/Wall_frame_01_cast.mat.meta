@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f3a7f402057982b488598e5785d8f645
+timeCreated: 1517338066
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112546
+  packageName: Medieval Tavern Pack
+  packageVersion: 1.0
+  assetPath: Assets/MedievalTavernPack/Material/Architecture/Wall_frame_01_cast.mat
+  uploadId: 239853
