@@ -8,10 +8,11 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
 
 
 
-    private float moveSpeed = 7f;
-    private float rotationSpeed = 12f;
-    private float jumpHeight = 2f;
-    private float gravity = -9.81f;
+    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float rotationSpeed = 12f;
+    [SerializeField] private float jumpHeight = 2f;
+    [SerializeField] private float gravity = -9.81f;
+    
 
    [SerializeField] private Transform groundCheck;
     [SerializeField]private float groundDistance = 0.4f;

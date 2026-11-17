@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0d2e9054e5be0425c96edd09a7102c2a
+timeCreated: 1537348329
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 128829
+  packageName: Crates And Barrels Pack Volume 1 - Free Version
+  packageVersion: 1.0
+  assetPath: Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/LightingData.asset
+  uploadId: 267850
