@@ -5,6 +5,8 @@ public class UI : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private GameObject uiObject;
     [SerializeField] private GameObject HealthBar;
+    public GameObject InGameUI;
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,6 +14,7 @@ public class UI : MonoBehaviour, IPointerClickHandler
         if (uiObject == null)
         uiObject = GameObject.Find("UI");
         HealthBar.SetActive(false);
+        InGameUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class UI : MonoBehaviour, IPointerClickHandler
         {
             uiObject.SetActive(false);
             HealthBar.SetActive(true);
+            InGameUI.SetActive(true);
         }
     }
 
