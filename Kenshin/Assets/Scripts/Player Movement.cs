@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
     void Start()
     {
       healthBar.SetMaxHealth(MaxHealth);
+      healthBar.SetHealth(Health); // sync the bar with the starting health
         controller = GetComponent<CharacterController>();
 
         if (Camera.main != null)
@@ -50,6 +51,18 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
         }
 
         JumpAndGravity();
+
+        // TEST: H = take damage, J = heal (remove when real damage/healing exists)
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            ChangeHealth(-2f);
+            Debug.Log("Damaged! Health = " + Health);
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            ChangeHealth(2f);
+            Debug.Log("Healed! Health = " + Health);
+        }
       }
 
     private void GroundCheck()
@@ -117,7 +130,8 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
         velocity.y += gravity * Time.deltaTime;
          controller.Move(velocity * Time.deltaTime);
     }
-    public void setHealth(float healthChange) 
+    // Adds healthChange to Health (use a negative number for damage)
+    public void ChangeHealth(float healthChange)
     {
      Health += healthChange;
      Health = Mathf.Clamp(Health, 0, MaxHealth);
