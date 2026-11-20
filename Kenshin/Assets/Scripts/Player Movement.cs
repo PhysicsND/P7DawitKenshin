@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
         if (Input.GetButtonDown("Jump"))
         {
             jumpRequested = true;
+            Debug.Log("Jump requested");
         }
 
         JumpAndGravity();
@@ -71,7 +72,8 @@ public class PlayerMovement : MonoBehaviour // Not just a movement script.
       on ground layer */
       if (groundCheck != null)
       {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        // Also trust the CharacterController, so floors on the wrong layer still count as ground
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask) || controller.isGrounded;
       }
       else
       {
